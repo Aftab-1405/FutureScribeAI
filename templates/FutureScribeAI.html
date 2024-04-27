@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FutureScribeAI</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/github-markdown-css@5.1.0/github-markdown.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <link rel="stylesheet" href="/static/FutureScribeAI.css">
+    <script defer src="/static/FutureScribeAI.js"></script>
+</head>
+
+<body class="light-theme">
+    <div class="app-container">
+        <!-- Left Section (Sidebar) -->
+        <div class="sidebar">
+            <div class="sidebar-header">
+                <button type="button" class="btn btn-primary new-chat-btn">
+                    <img src="static/ABN.png" alt="FutureScribeAI Logo" class="logo">
+                    New Chat
+                    <i class="fas fa-plus"></i>
+                </button>
+            </div>
+            <div class="sidebar-content">
+                <div class="chat-history-sidebar">
+                    <!-- Chat history will be appended here -->
+                </div>
+                <div class="settings">
+                    <button type="button" class="btn btn-secondary settings-btn">
+                        <i class="fas fa-cog"></i>
+                        Settings
+                    </button>
+                </div>
+            </div>
+            <div class="sidebar-toggle">
+                <svg class="toggle-icon" viewBox="0 0 24 24">
+                    <path fill="currentColor"
+                        d="M9.29 15.88L13.17 12 9.29 8.12c-.39-.39-.39-1.02 0-1.41.39-.39 1.02-.39 1.41 0l4.59 4.59c.39.39.39 1.02 0 1.41L10.7 17.3c-.39.39-1.02.39-1.41 0-.38-.39-.39-1.03 0-1.42z" />
+                </svg>
+            </div>
+        </div>
+
+        <!-- Right Section (Chat Section) -->
+        <div class="chat-container">
+            <nav class="navbar">
+                <div class="alert-message" id="alert-message"></div>
+                <div class="navbar-content">
+                    <img src="static/ABN.png" alt="Logo" width="25" height="25">
+                    <span class="navbar-text">FutureScribeAI</span>
+                </div>
+            </nav>
+            <div class="header">
+                <h1>FutureScribeAI</h1>
+            </div>
+            <div class="chat-history">
+                <!-- Chat messages will be appended here -->
+            </div>
+            <footer class="input-section">
+                <textarea id="text-input" rows="1" placeholder="Enter text to summarize..."></textarea>
+                <div class="send-icon">
+                    <i class="fas fa-paper-plane"></i>
+                </div>
+            </footer>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+</body>
+
+</html>
